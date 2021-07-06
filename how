@@ -1,0 +1,40 @@
+[33mcommit 5affcaee92c6bd1edc1a45010a00849098ecf5e2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: irinastate <irinastate01@yahoo.com>
+Date:   Thu Jun 24 20:50:01 2021 +0300
+
+    Tema Session 04
+
+[1mdiff --git a/src/main/java/ro/siitproject/homeworks/homework_4/Factorial.java b/src/main/java/ro/siitproject/homeworks/homework_4/Factorial.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b112eed[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/ro/siitproject/homeworks/homework_4/Factorial.java[m
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32mpackage ro.siitproject.homeworks.homework_4;[m
+[32m+[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mpublic class Factorial {[m
+[32m+[m[32m    public static void main(String[] args) {[m
+[32m+[m[32m        Scanner tastatura = new Scanner(System.in);[m
+[32m+[m[32m        System.out.println("Introduceti n!");[m
+[32m+[m[32m        double n = tastatura.nextDouble();[m
+[32m+[m[32m        System.out.println("Rezultatul este: " + factorial(n));[m
+[32m+[m[32m        System.out.println("Rezultatul este: " + factorialRecursiv(n));[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    private static double factorial(double n) {[m
+[32m+[m[32m        double f = 1;[m
+[32m+[m[32m        for (int i = 1; i <= n; i++) {[m
+[32m+[m[32m            f = f * i;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return f;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    private static double factorialRecursiv(double n) {[m
+[32m+[m[32m        if (n == 0) {[m
+[32m+[m[32m            return 1;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return n * factorialRecursiv(n - 1);[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
